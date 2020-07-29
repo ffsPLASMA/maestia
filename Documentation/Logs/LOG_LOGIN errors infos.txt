@@ -1,0 +1,36 @@
+ (8696) 02/28/19 21:43:37.070  [AvaCltSockEvt::ConnectToLoginServer]
+ (8696) 02/28/19 21:43:37.071  AvaCltSockEvt::OnConnected - connected success
+ (8696) 02/28/19 21:43:37.071  [Clt Net] Send message success : Hello!
+ (8696) 02/28/19 21:43:37.071  [AvaCltSockEvt::ConnectToLoginServer] Open login socket success! (195.122.162.198:21001)
+ (5800) 02/28/19 21:43:37.080  [CRITICAL][PACKETBROKEN][206,237]PACKET-SIZE = 5904
+
+ (5800) 02/28/19 21:43:37.080  [SOCKET][CloseForce] socket 980, reason 228, old reason 255, isAlarmConnect 1
+
+ (5800) 02/28/19 21:43:37.080  [AvaCltSockEvt::OnClose] Close Reason = 228
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ (8696) 02/28/19 21:59:33.978  [AvaCltSockEvt::ConnectToLoginServer] Open login socket success! (195.122.162.198:21001)
+ (8696) 02/28/19 21:59:33.996  [Clt Net] Undefined Packet : [Main = 1] [Sub = 10]
+ (8696) 02/28/19 21:59:38.931  [WM_ACTIVATE] Inactivate
+ (12892) 02/28/19 21:59:56.211  [SOCKET][CloseForce] socket 1928, reason 224, old reason 255, isAlarmConnect 1
+
+ (12892) 02/28/19 21:59:56.211  [AvaCltSockEvt::OnClose] Close Reason = 224
+ 
+ 
+ 
+  (6152) 03/03/19 19:28:41.749  [AvaCltSockEvt::ConnectToLoginServer] Open login socket success! (195.122.162.198:21001)
+ (6152) 03/03/19 19:28:41.762  [Clt Net] Undefined Packet : [Main = 1] [Sub = 10]
+ (6152) 03/03/19 19:28:55.027  [WM_ACTIVATE] Inactivate
+ (11808) 03/03/19 19:29:01.847  [SOCKET][CloseForce] socket 1900, reason 224, old reason 255, isAlarmConnect 1
+
+ (11808) 03/03/19 19:29:01.847  [AvaCltSockEvt::OnClose] Close Reason = 224

@@ -1,0 +1,33 @@
+# Maestia MVD Script
+
+for
+findloc start string "\x01\x92\x28\x9C"
+print "%start%"
+goto start
+get type1 long
+get totalsize long
+get type2 long
+get nsize long
+math nsize - 8
+getdstring uname nsize
+set NAME unicode uname
+get type3 long
+get type3size long
+math type3size - 8
+getdstring null type3size
+get type4 long
+get type4size long
+math type4size - 8
+getdstring null type4size
+get type5 long
+get type5size long
+math type5size - 8
+getdstring null type5size
+get type6 long
+get type6size long
+math type6size - 8
+savepos offset
+log name offset type6size
+math offset + type6size
+goto offset
+next  

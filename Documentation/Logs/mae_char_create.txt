@@ -1,0 +1,235 @@
+1.)
+	01 = warrior male
+	02 = warrior female
+
+	03 = mage male
+	04 = mage female
+	
+	05 = archer male
+	06 = archer female
+	
+	07 = priest male
+	08 = priest female
+
+	
+2.)
+	00 = ?? //never changes
+	
+3.)
+	01 = ?? //never changes // char level ??
+	
+4.)
+	05 = ?? //never changes
+	
+5.)
+	01 = SG faction
+	02 = TK	faction
+
+6.)
+	00 = ?? //never changes
+	
+7.)
+	00 = ?? //never changes
+	
+8.)
+	10 = ?? //never changes
+
+9.)
+	xx = Character name byte by byte with 00 between each letter (max 15 letters)
+	00
+	xx
+	00
+	xx
+	...
+	
+	//everything will be 00ed out up to byte 90
+
+90.)
+	96 = face 0 & tatoo 0
+	97 = face 0 & tatoo 1
+	98 = face 0 & tatoo 2
+	99 = face 0 & tatoo 3
+	
+	9A = face 1 & tatoo 0
+	9B = face 1 & tatoo 1
+	9C = face 1 & tatoo 2
+	9D = face 1 & tatoo 3
+	
+	9E = face 2 & tatoo 0
+	9F = face 2 & tatoo 1
+	A0 = face 2 & tatoo 2
+	A1 = face 2 & tatoo 3
+	
+	F6 = face 3 & tatoo 0
+	F7 = face 3 & tatoo 1
+	F8 = face 3 & tatoo 2
+	F9 = face 3 & tatoo 3
+	
+	
+91.)
+	00 //never changes
+	
+92.)
+	01 = hair 0
+	02 = hair 1
+	03 = hair 2
+	04 = hair 3
+	05 = hair 4
+	06 = hair 5
+	07 = hair 6
+	
+93.)
+	00 //never changes
+	
+94.)
+	xx // hair color R
+	
+95.)
+	xx // hair color G
+	
+96.)
+	xx // hair color B
+	
+97.)
+	00 //never changes
+	
+98.)
+	xx // face color R
+
+99.)
+	xx // face color G
+	
+100.)
+	xx // face color B
+	
+101.)
+	00 //never changes
+	
+102.)
+	00 // smallest character size
+	01
+	02
+	03
+	04
+	05 // middle
+	06
+	07
+	08
+	09
+	0A // biggest
+	
+103.)
+	00 //never changes
+	
+104.)
+	00 //never changes
+	
+105.)
+	00 //never changes
+	
+106.)
+	00 // thinnest character type
+	01
+	02
+	03
+	04
+	05 // medium fat
+	06
+	07
+	08
+	09
+	A0 // fatty boom boom
+	
+107.)
+	00 //never changes
+	
+108.)
+	00 //never changes
+	
+109.)
+	00 //never changes
+	
+110.)
+	04 = warrior male
+	28 = warrior female
+	0F = mage male
+	BD = mage female
+	DC = archer male
+	00 = archer female
+	A8 = priest male
+	61 = priest female
+	
+111.)
+	00 = warrior both // archer male
+	01 = mage female // archer female
+	02 = mage male // priest both
+	
+112.)
+	00 //never changes
+	
+113.)
+	71 = ?? //never changes
+	
+114.)
+	02 = warrior male
+	26 = warrior female
+	5F = priest female
+	A6 = priest male
+	BB = mage female
+	0D = mage male
+	DA = archer male
+	FE = archer female
+	
+115.)
+	00
+	
+116.)
+	00
+	
+117.)
+	71 = ?? //never changes
+	
+118.)
+	01 = warrior male
+	25 = warrior female
+	0C = mage male
+	BA = mage female
+	D9 = archer male
+	FD = archer female
+	A5 = priest male
+	5E = priest female
+
+119.)
+	00 = warrior both // archer both
+	02 = mage male // priest both
+	01 = mage female
+
+120.)
+	00 //never changes
+	
+121.)
+	71 = ?? //never changes
+	
+122.)
+	03 = warrior male
+	27 = warrior female
+	0E = mage male
+	BC = mage female
+	DB = archer male
+	FF = archer female
+	A7 = priest male
+	60 = priest female
+
+123.)
+	00 = warrior both // archer both
+	01 = mage female
+	02 = mage male // priest both
+
+124.)
+	00 //never changes
+	
+125.)
+	71 = ? //never changes
+	
+126.)
+	00 //never changes

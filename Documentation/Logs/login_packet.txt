@@ -1,0 +1,47 @@
+53 88 f0 d8 44 35 fc 38   P. ..ã..S.ðØD5ü8
+ff 01 11 7d 1a c0 ff ab   ÿ..}.Àÿ«
+
+
+
+P ãSðØDüÿÀÿ
+
+
+
+5388f0d84435fc38ff01117d1ac0ffab
+
+
+
+"x53\x88\xf0\xd8\x44\x35\xfc\x38" \
+"\xff\x01\x11\x7d\x1a\xc0\xff\xab"
+
+
+
+x53  und  x88 = short length (whole packet)
+
+xf0 = MainID
+
+xd8 = SubID
+
+x44,x35,xfc,x38,xff,x01,x11,x7d,x1a,xc0,xff,xab  = Data
+
+
+
+short Length (Whole packet)
+byte MainID
+byte SubID
+... Data
+
+
+
+int __stdcall WSACleanup();
+int __stdcall WSAStartup(WORD wVersionRequested, LPWSADATA lpWSAData);
+int __stdcall WSARecv(SOCKET s, LPWSABUF lpBuffers, DWORD dwBufferCount, LPDWORD lpNumberOfBytesRecvd, LPDWORD lpFlags, LPWSAOVERLAPPED lpOverlapped, LPWSAOVERLAPPED_COMPLETION_ROUTINE lpCompletionRoutine);
+int __stdcall WSASend(SOCKET s, LPWSABUF lpBuffers, DWORD dwBufferCount, LPDWORD lpNumberOfBytesSent, DWORD dwFlags, LPWSAOVERLAPPED lpOverlapped, LPWSAOVERLAPPED_COMPLETION_ROUTINE lpCompletionRoutine);
+
+
+
+WSAStartup(0x202u, &WSAData);
+
+
+
+xAD xBC xB9

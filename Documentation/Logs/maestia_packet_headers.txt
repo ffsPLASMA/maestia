@@ -1,0 +1,271 @@
+undefined4 clientPacketHeaders(void)
+{
+  void *this;
+  int *this_00;
+  void *this_01;
+  
+  if (this_00 == (int *)0x0) {
+    return 0;
+  }
+  _systemTimeInMS = timeGetTime();
+  switch(*(undefined *)((int)this_00 + 2)) {
+  
+  
+  //MainID: 1
+  case 1:
+    clientHandleLogin(this_00,(int)this_01);
+    return 1;
+	
+	
+	//MainID: 2
+  case 2:
+    clientHandleLogout(this_00,(int)this_01);
+    return 1;
+	
+	
+	//MainID: 3
+  case 3:
+    clientHandleEncryptions(this_00,(uint)this_01);
+    return 1;
+	
+	
+	//MainID: 4
+  case 4:
+    clientHandleErrors((int)this_00);
+    return 1;
+	
+	
+	//MainID: 11
+  case 0xb:
+    clientHandleMACAdress(this_01,(int)this_00);
+    return 1;
+	
+	
+	//MainID: 12
+  case 0xc:
+    clientHandleServerList((int)this_01,this_00);
+    return 1;
+	
+	
+	//MainID: 51
+  case 0x33:
+    clientHandleNetworkUpdates(this_01,this_00);
+    return 1;
+	
+	
+	//MainID: 52
+  case 0x34:
+    clientHandleCharUpdate();
+    return 1;
+	
+	
+	//MainID: 53
+  case 0x35:
+    FUN_00a9b960((int)this_00);
+    return 1;
+	
+	
+	//MainID: 54
+  case 0x36:
+    clientHandleItem(this_01,this_00);
+    return 1;
+	
+	
+	//MainID: 55
+  case 0x37:
+    clientHandleShop(this,(int)this_00);
+    return 1;
+	
+	
+	//MainID: 56
+  case 0x38:
+    clientHandleChat(this,(int)this_00);
+    return 1;
+	
+	
+	//MainID: 57
+  case 0x39:
+    clientHandleParty((ushort *)this_00);
+    return 1;
+	
+	
+	//MainID: 58
+  case 0x3a:
+    clientHandleSkill(this_00);
+    return 1;
+	
+	
+	//MainID: 59
+  case 0x3b:
+    clientHandleItem2(this_00);
+    return 1;
+	
+	
+	//MainID: 61
+  case 0x3d:
+    clientHandleTrade((int)this_00);
+    return 1;
+	
+	
+	//MainID: 62
+  case 0x3e:
+    if (DAT_00d3e668 != (void *)0x0) {
+      clientHandleQuest((int)this_00);
+      return 1;
+    }
+    break;
+	
+	
+	//MainID: 63
+  case 0x3f:
+    clientHandleZoneMovement(this_00);
+    return 1;
+	
+	
+	//MainID: 64
+  case 0x40:
+    clientHandleMotion(this_00);
+    return 1;
+	
+	
+	//MainID: 65
+  case 0x41:
+    clientHandleItemNotice(this_00);
+    return 1;
+	
+	
+	//MainID: 66
+  case 0x42:
+    clientHandleStorage((int)this_00);
+    return 1;
+	
+	
+	//MainID: 67
+  case 0x43:
+    clientHandleAdminCommand(this_00);
+    return 1;
+	
+	
+	//MainID: 68
+  case 0x44:
+    clientHandleMail(this,(int)this_00);
+    return 1;
+	
+	
+	//MainID: 70
+  case 0x46:
+    clientHandleGuild(this,this_00);
+    return 1;
+	
+	
+	//MainID: 94
+  case 0x5e:
+    clientHandleWhisper((int)this_00);
+    return 1;
+	
+	
+	//MainID: 95
+  case 0x5f:
+    clientHandleFriendlist(this_00);
+    return 1;
+	
+	
+	//MainID: 96
+  case 0x60:
+    clientHandleChatRoom();
+    return 1;
+	
+	
+	//MainID: 97
+  case 0x61:
+    clientHandleAuction();
+    return 1;
+	
+	
+	//MainID: 98
+  case 0x62:
+    clientHandlePrivateShop((int)this_00);
+    return 1;
+	
+	
+	//MainID: 99
+  case 99:
+    FUN_00a944a0();
+    return 1;
+	
+	
+	//MainID: 100
+  case 100:
+    FUN_00a90ac0();
+    return 1;
+	
+	
+	//MainID: 137
+  case 0x89:
+    clientHandleBeautyShop((int)this_00);
+    return 1;
+	
+	
+	//MainID: 143
+  case 0x8f:
+    clientHandleMoveToBattleZone(this,this_00);
+    return 1;
+	
+	
+	//MainID: 144
+  case 0x90:
+    clientHandlePet((ushort *)this_00);
+    return 1;
+	
+	
+	//MainID: 145
+  case 0x91:
+    FUN_00a93400((ushort *)this_00);
+    return 1;
+	
+	
+	//MainID: 149
+  case 0x95:
+    clientHandleGuildWarface((int)this_00);
+    return 1;
+	
+	
+	//MainID: 150
+  case 0x96:
+    FUN_00a92990(this_00);
+    return 1;
+	
+	
+	//MainID: 200
+  case 200:
+    if (DAT_00d3e668 != (void *)0x0) {
+      FUN_009e6590(DAT_00d3e668,(int)this_00);
+      return 1;
+    }
+    break;
+	
+	
+	//MainID: 202
+  case 0xca:
+    clientHandleEvent((int)this_00);
+    return 1;
+	
+	
+	//MainID: 203
+  case 0xcb:
+    clientHandlePet2((int)this_00);
+    return 1;
+	
+	
+	//MainID: 204
+  case 0xcc:
+    clientHandleCharTitle((uint)this_00);
+    return 1;
+	
+	
+	//MainID: 205
+  case 0xcd:
+    clientHandlePenalty((int)this_00);
+  }
+  return 1;
+}

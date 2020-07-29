@@ -1,0 +1,126 @@
+//DPKUZ_USER_RS_CHARLIST_DATA
+var charNameX = "Plasma";
+var guildName = "Test Guild";
+
+var characterListDataPacket = new Packet(51, 13);
+characterListDataPacket.WriteInt(1);   // ??
+characterListDataPacket.WriteShort(8); // character Class and Gender from 1 to 8
+characterListDataPacket.WriteByte(1);  // Must be 1
+characterListDataPacket.WriteByte(5);  // Must be 5
+characterListDataPacket.WriteByte(1);  // ?? faction????
+characterListDataPacket.WriteByte(1);  // Char removal active?
+characterListDataPacket.WriteByte(0);  // ??
+characterListDataPacket.WriteByte(1);  // Char removal active?
+characterListDataPacket.WriteBytes(Encoding.Unicode.GetBytes(charNameX));  //character name
+characterListDataPacket.WriteBytes(new byte[80 - charNameX.Length * 2]);
+characterListDataPacket.WriteBytes(Encoding.Unicode.GetBytes(guildName));  //guild name
+characterListDataPacket.WriteBytes(new byte[80 - guildName.Length * 2]);
+characterListDataPacket.WriteByte(21);  // Face and Tatoo ID -2-1 = mage male face 1 tatoos | 2-5 = mage female face 1 tatoos| 6-9 = archer male face 1 tatoos | 10-13 = archer female face 1 tatoos| 14-17 = priest male face 1 tatoos | 18-21 = priest female face 1 tatoos
+characterListDataPacket.WriteByte(1);   // ?? Must be 1
+characterListDataPacket.WriteByte(6);   // Hair ID from 1 to 7
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(255); // Hair Color B (reversed!)
+characterListDataPacket.WriteByte(255); // Hair Color G (reversed!)
+characterListDataPacket.WriteByte(255); // Hair Color R (reversed!)
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(148); // Skin Color B (reversed!)
+characterListDataPacket.WriteByte(205); // Skin Color G (reversed!)
+characterListDataPacket.WriteByte(255); // Skin Color R (reversed!)
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(5);   // Char Size from 0 to 10
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(5);   // Char Weigth from 0 to 10
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(97);  // 3D Model Torso   priest female: 97  up to 99
+characterListDataPacket.WriteByte(2);   // 3D Model Torso    00 = warrior both // archer male    01 = mage female // archer female     02 = mage male // priest both
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(95);  // 3D Model hands/wrists   priest female: 95
+characterListDataPacket.WriteByte(2);   // 3D Model hands/wrists    00 = warrior both // archer male    01 = mage female // archer female     02 = mage male // priest both
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(94);  // 3D Model Shoes   priest female: 94
+characterListDataPacket.WriteByte(2);   // 3D Model Shoes    00 = warrior both // archer male    01 = mage female // archer female     02 = mage male // priest both
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(96);  // 3D Model Legs   priest female: 96
+characterListDataPacket.WriteByte(2);   // 3D Model Legs    00 = warrior both // archer male    01 = mage female // archer female     02 = mage male // priest both
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(0);   // 00 (placeholder)
+characterListDataPacket.WriteByte(100); // Char Level
+characterListDataPacket.WriteByte(0);   // Slot from 0 to 3
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // byte GAP[1];
+characterListDataPacket.WriteByte(0);   // Char locked? 0 = off / 1 = on
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteBytes(new byte[2]); //byte GAP_2[2];
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+characterListDataPacket.WriteByte(0);   // ??
+packetSender.SendPacket(characterListDataPacket);
